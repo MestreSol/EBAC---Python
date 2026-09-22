@@ -53,6 +53,8 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'ebac.urls'
 
+TEMPLATES_DIRS = os.path.join(BASE_DIR, 'templates')
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -128,4 +130,3 @@ MAILERS = {
     },
 }
 
-TEMPLATES_DIRS = os.path.join(BASE_DIR, 'templates')
